@@ -1,19 +1,48 @@
-# @babel/code-frame
+# Chat Widget — README
 
-> Generate errors that contain a code frame that point to source locations.
+## Run
 
-See our website [@babel/code-frame](https://babeljs.io/docs/babel-code-frame) for more information.
+npm install
+npm run dev
 
-## Install
+# open http://localhost:5173/
+By default the project is configured to use a test API (fetch) — requests go to JSONPlaceholder. No backend required.
 
-Using npm:
+Switch modes
+Test mode (default)
+VITE_TEST_FETCH=true
 
-```sh
-npm install --save-dev @babel/code-frame
-```
+Real backend
+VITE_TEST_FETCH=false
+VITE_API_BASE=https://your-backend.example.com
 
-or using yarn:
+Requests go to:
+${VITE_API_BASE}/api/chat
 
-```sh
-yarn add @babel/code-frame --dev
-```
+After changing .env, restart:
+npm run dev
+
+
+Files 
+
+src/main.tsx — mounts <App />
+
+src/App.tsx — app root, wraps chat with ErrorBoundary
+
+src/Chatbot.tsx — chat logic: state, fetch, autofocus, UI composition
+
+src/types/chat.ts — Message type
+
+src/components/ErrorBoundary.tsx — UI crash guard
+
+src/components/chat/
+
+ChatHeader.tsx — header
+
+MessageList.tsx — list + autoscroll
+
+ChatMessage.tsx — single message bubble
+
+MessageInput.tsx — input + submit
+
+LoadingIndicator.tsx — “typing…” indicator

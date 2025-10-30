@@ -1,0 +1,36 @@
+.footer {
+  padding: 12px;
+  border-top: 1px solid #eef0f4;
+  background: #fff;
+}
+
+.row {
+  display: flex;
+  gap: 8px;
+}
+
+.input {
+  flex: 1;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 10px 12px;
+  outline: none;
+}
+
+.sendBtn {
+  border: none;
+  border-radius: 12px;
+  padding: 10px 14px;
+  background: var(--color-primary);
+  color: #fff;
+  cursor: pointer;
+  transition: transform 120ms ease;
+}
+
+.status {
+  font-size: 11px;
+  color: #64748b;
+  margin-top: 6px;
+  display: flex;
+  justify-content: space-between;
+}

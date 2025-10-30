@@ -1,0 +1,25 @@
+.header {
+  height: 56px;
+  background: var(--color-primary);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 14px 0 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, .12);
+}
+
+.title {
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: .2px;
+}
+
+.closeBtn {
+  border: none;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+  line-height: 1;
+}

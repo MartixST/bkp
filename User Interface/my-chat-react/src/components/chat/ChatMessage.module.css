@@ -1,0 +1,31 @@
+.line {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.user {
+  margin-left: auto;
+  background: var(--color-primary);
+  color: #fff;
+  padding: 10px 12px;
+  border-radius: 14px;
+  max-width: 80%;
+  line-height: 1.4;
+  font-size: 14px;
+  word-break: break-word;
+  box-shadow: 0 6px 16px rgba(19, 168, 188, 0.25);
+}
+
+.bot {
+  margin-right: auto;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  color: #111;
+  padding: 10px 12px;
+  border-radius: 14px;
+  max-width: 80%;
+  line-height: 1.5;
+  font-size: 14px;
+  word-break: break-word;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+}
